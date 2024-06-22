@@ -7,9 +7,14 @@
 
 import Foundation
 
-struct Item {
+class Item {
     let id : UUID = UUID()
     var title : String
     var itemDescription : String
     let date : Date = Date()
+    
+    init(title: String, itemDescription: String) {
+        self.title = title
+        self.itemDescription = itemDescription
+    }
 }

@@ -10,6 +10,10 @@ import Foundation
 class PersistenceController {
     private static var itemList : [Item] = []
     
+    func clearList () {
+        PersistenceController.itemList.removeAll()
+    }
+    
     func addItem (item : Item) {
         PersistenceController.itemList.append(item)
     }
