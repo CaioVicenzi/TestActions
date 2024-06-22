@@ -25,7 +25,7 @@ final class CRUDTests: XCTestCase {
         let item = controller.fetchItems().first
         
         assert(item?.title == itemCriado.title)
-        XCTAssertNil(item)
+        //XCTAssertNil(item)
     }
     
     func testItemExclusion () {
